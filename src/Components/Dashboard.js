@@ -18,9 +18,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 import Deposits from "./Deposits";
 import Orders from "./Orders";
+import Accountmenu from "./Accountmenu";
 
 function Copyright(props) {
     return (
@@ -31,8 +33,8 @@ function Copyright(props) {
             {...props}
         >
             {"Copyright © "}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
+            <Link color="inherit" href="#">
+                Karta
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}
@@ -86,7 +88,13 @@ const Drawer = styled(MuiDrawer, {
     },
 }));
 
-const mdTheme = createTheme();
+const mdTheme = createTheme({
+    palette: {
+        primary: {
+            main: "#289CC2",
+        },
+    },
+});
 
 function DashboardContent() {
     const [open, setOpen] = React.useState(true);
@@ -125,11 +133,12 @@ function DashboardContent() {
                         >
                             Dashboard
                         </Typography>
-                        <IconButton color="inherit">
-                            <Badge badgeContent={4} color="secondary">
-                                <NotificationsIcon />
+                        {/* <IconButton color="inherit">
+                            <Badge badgeContent={1} color="secondary">
+                                <AccountCircleIcon />
                             </Badge>
-                        </IconButton>
+                        </IconButton> */}
+                        <Accountmenu />
                     </Toolbar>
                 </AppBar>
                 <Drawer variant="permanent" open={open}>
@@ -137,10 +146,19 @@ function DashboardContent() {
                         sx={{
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "flex-end",
+                            justifyContent: "space-between",
                             px: [1],
                         }}
                     >
+                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                            <img src="../logo.png" alt="logo" width={"50px"} />
+                            <Typography
+                                variant="h5"
+                                sx={{ ml: 2, fontWeight: "bold" }}
+                            >
+                                Karta
+                            </Typography>
+                        </Box>
                         <IconButton onClick={toggleDrawer}>
                             <ChevronLeftIcon />
                         </IconButton>
@@ -148,7 +166,7 @@ function DashboardContent() {
                     <Divider />
                     <List>{mainListItems}</List>
                     <Divider />
-                    <List>{secondaryListItems}</List>
+                    {/* <List>{secondaryListItems}</List> */}
                 </Drawer>
                 <Box
                     component="main"
@@ -164,8 +182,13 @@ function DashboardContent() {
                 >
                     <Toolbar />
                     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+                        <Typography variant="h3">
+                            Welcome to the administration
+                        </Typography>
+                        <br />
                         <Grid container spacing={3}>
                             {/* Recent Deposits */}
+
                             <Grid item xs={12} md={4} lg={3}>
                                 <Paper
                                     sx={{
