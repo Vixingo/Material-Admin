@@ -189,7 +189,7 @@ function DashboardContent() {
                         <Grid container spacing={3}>
                             {/* Recent Deposits */}
 
-                            <Grid item xs={12} md={4} lg={3}>
+                            {/* <Grid item xs={12} md={4} lg={3}>
                                 <Paper
                                     sx={{
                                         p: 2,
@@ -200,7 +200,7 @@ function DashboardContent() {
                                 >
                                     <Deposits />
                                 </Paper>
-                            </Grid>
+                            </Grid> */}
                             {/* Recent Orders */}
                             <Grid item xs={12}>
                                 <Paper
