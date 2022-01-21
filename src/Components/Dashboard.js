@@ -19,11 +19,23 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-
 import Deposits from "./Deposits";
 import Orders from "./Orders";
 import Accountmenu from "./Accountmenu";
-
+import { makeStyles } from "@mui/styles";
+import { useState } from "react";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import ListSubheader from "@mui/material/ListSubheader";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import PeopleIcon from "@mui/icons-material/People";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import LayersIcon from "@mui/icons-material/Layers";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import Cards from "./Cards";
 function Copyright(props) {
     return (
         <Typography
@@ -95,13 +107,42 @@ const mdTheme = createTheme({
         },
     },
 });
-
+const useStyles = makeStyles({
+    normal: {
+        background: "#fff",
+        color: "rgba(0, 0, 0, 0.54)",
+    },
+    activated: {
+        background: "#289CC2 !important",
+        color: "#fff !important",
+        "& > :not(style)": {
+            color: "#fff",
+        },
+        "&:hover": {
+            color: "#000",
+            "& > :not(style)": {
+                color: "#000",
+            },
+        },
+    },
+    content: {
+        display: "none",
+    },
+    activeContent: {
+        display: "block",
+    },
+});
 function DashboardContent() {
     const [open, setOpen] = React.useState(true);
     const toggleDrawer = () => {
         setOpen(!open);
     };
+    const classes = useStyles();
+    const [toggleState, setToggleState] = useState(1);
 
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
     return (
         <ThemeProvider theme={mdTheme}>
             <Box sx={{ display: "flex" }}>
@@ -133,11 +174,6 @@ function DashboardContent() {
                         >
                             Dashboard
                         </Typography>
-                        {/* <IconButton color="inherit">
-                            <Badge badgeContent={1} color="secondary">
-                                <AccountCircleIcon />
-                            </Badge>
-                        </IconButton> */}
                         <Accountmenu />
                     </Toolbar>
                 </AppBar>
@@ -164,7 +200,80 @@ function DashboardContent() {
                         </IconButton>
                     </Toolbar>
                     <Divider />
-                    <List>{mainListItems}</List>
+                    {/* <List>{mainListItems}</List> */}
+                    <ListItem
+                        button
+                        className={
+                            toggleState === 1
+                                ? classes.activated
+                                : classes.normal
+                        }
+                        onClick={() => toggleTab(1)}
+                    >
+                        <ListItemIcon>
+                            <DashboardIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Dashboard" />
+                    </ListItem>
+                    <ListItem
+                        button
+                        className={
+                            toggleState === 2
+                                ? classes.activated
+                                : classes.normal
+                        }
+                        onClick={() => toggleTab(2)}
+                    >
+                        <ListItemIcon>
+                            <LayersIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Cards" />
+                    </ListItem>
+
+                    <ListItem
+                        button
+                        className={
+                            toggleState === 3
+                                ? classes.activated
+                                : classes.normal
+                        }
+                        onClick={() => toggleTab(3)}
+                    >
+                        <ListItemIcon>
+                            <BusinessCenterIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Partners" />
+                    </ListItem>
+                    <ListItem
+                        button
+                        className={
+                            toggleState === 4
+                                ? classes.activated
+                                : classes.normal
+                        }
+                        onClick={() => toggleTab(4)}
+                    >
+                        <ListItemIcon>
+                            <PeopleIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Users" />
+                    </ListItem>
+
+                    <ListItem
+                        button
+                        className={
+                            toggleState === 5
+                                ? classes.activated
+                                : classes.normal
+                        }
+                        onClick={() => toggleTab(5)}
+                    >
+                        <ListItemIcon>
+                            <LocalOfferIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Programs" />
+                    </ListItem>
+
                     <Divider />
                     {/* <List>{secondaryListItems}</List> */}
                 </Drawer>
@@ -185,11 +294,58 @@ function DashboardContent() {
                         <Typography variant="h3">
                             Welcome to the administration
                         </Typography>
-                        <br />
-                        <Grid container spacing={3}>
-                            {/* Recent Deposits */}
 
-                            {/* <Grid item xs={12} md={4} lg={3}>
+                        <br />
+                        <div
+                            className={
+                                toggleState === 1
+                                    ? classes.activeContent
+                                    : classes.content
+                            }
+                        >
+                            <h1>1</h1>
+                        </div>
+
+                        <div
+                            className={
+                                toggleState === 2
+                                    ? classes.activeContent
+                                    : classes.content
+                            }
+                        >
+                            <Cards />
+                        </div>
+                        <div
+                            className={
+                                toggleState === 3
+                                    ? classes.activeContent
+                                    : classes.content
+                            }
+                        >
+                            <h1>3</h1>
+                        </div>
+                        <div
+                            className={
+                                toggleState === 4
+                                    ? classes.activeContent
+                                    : classes.content
+                            }
+                        >
+                            <h1>4</h1>
+                        </div>
+                        <div
+                            className={
+                                toggleState === 5
+                                    ? classes.activeContent
+                                    : classes.content
+                            }
+                        >
+                            <h1>5</h1>
+                        </div>
+                        {/* <Grid container spacing={3}> */}
+                        {/* Recent Deposits */}
+
+                        {/* <Grid item xs={12} md={4} lg={3}>
                                 <Paper
                                     sx={{
                                         p: 2,
@@ -201,8 +357,8 @@ function DashboardContent() {
                                     <Deposits />
                                 </Paper>
                             </Grid> */}
-                            {/* Recent Orders */}
-                            <Grid item xs={12}>
+                        {/* Recent Orders */}
+                        {/* <Grid item xs={12}>
                                 <Paper
                                     sx={{
                                         p: 2,
@@ -213,7 +369,7 @@ function DashboardContent() {
                                     <Orders />
                                 </Paper>
                             </Grid>
-                        </Grid>
+                        </Grid> */}
                         <Copyright sx={{ pt: 4 }} />
                     </Container>
                 </Box>

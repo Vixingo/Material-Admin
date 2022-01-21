@@ -1,0 +1,252 @@
+[
+    {
+        "customer": {
+            "creationTime": 1630458562178,
+            "modifiedTime": 1630458562178,
+            "customerNumber": "10000030490864"
+        },
+        "card": {
+            "creationTime": 1630458563333,
+            "modifiedTime": 1630460004428,
+            "id": "8A056F2B609BE7B2302F704CC8E4A587-1000043511",
+            "cardNumber": "7778365850595100612",
+            "panFirst6": "557605",
+            "panLast4": "0148",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212009",
+            "customerNumber": "10000030490864",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1630388410646,
+            "modifiedTime": 1630388410646,
+            "customerNumber": "10000030450488"
+        },
+        "card": {
+            "creationTime": 1630388411784,
+            "modifiedTime": 1630388411784,
+            "id": "FCB792E83B201B8FCFA04C8178FF5471-1000043511",
+            "cardNumber": "8700208062801606176",
+            "panFirst6": "557605",
+            "panLast4": "0122",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212008",
+            "customerNumber": "10000030450488",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1630035184486,
+            "modifiedTime": 1630035184486,
+            "customerNumber": "10000030430985"
+        },
+        "card": {
+            "creationTime": 1630035185629,
+            "modifiedTime": 1630035185629,
+            "id": "00355C68E0A5C0050B28CD93AF281800-1000043511",
+            "cardNumber": "7422985476468316252",
+            "panFirst6": "557605",
+            "panLast4": "0106",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212008",
+            "customerNumber": "10000030430985",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1630031753152,
+            "modifiedTime": 1630031753152,
+            "customerNumber": "10000030410466"
+        },
+        "card": {
+            "creationTime": 1630031754491,
+            "modifiedTime": 1630033976429,
+            "id": "ABD9BCEF2354CB8B5C53D91ACE934F83-1000043511",
+            "cardNumber": "9832450354716739076",
+            "panFirst6": "557605",
+            "panLast4": "0098",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212008",
+            "customerNumber": "10000030410466",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1629334740503,
+            "modifiedTime": 1629334740503,
+            "customerNumber": "10000030290447"
+        },
+        "card": {
+            "creationTime": 1629334741691,
+            "modifiedTime": 1629955418017,
+            "id": "3A94B2E1CD3EE29F60FE6AEBA17575B6-1000043511",
+            "cardNumber": "9357711429788503783",
+            "panFirst6": "557605",
+            "panLast4": "0064",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212008",
+            "customerNumber": "10000030290447",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1629331952275,
+            "modifiedTime": 1629331952275,
+            "customerNumber": "10000030270274"
+        },
+        "card": {
+            "creationTime": 1629331953272,
+            "modifiedTime": 1629354195606,
+            "id": "651B71BE3EA2797B46D9F5A7CE5C7BF5-1000043511",
+            "cardNumber": "9009064625363686865",
+            "panFirst6": "557605",
+            "panLast4": "0056",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212008",
+            "customerNumber": "10000030270274",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1632285434963,
+            "modifiedTime": 1632285434963,
+            "customerNumber": "10000060160361"
+        },
+        "card": {
+            "creationTime": 1632285436128,
+            "modifiedTime": 1632286036536,
+            "id": "5080AEA81855CCC55ED0960F25928A84-1000043511",
+            "cardNumber": "5003505651035146165",
+            "panFirst6": "557605",
+            "panLast4": "0239",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212009",
+            "customerNumber": "10000060160361",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1632029243041,
+            "modifiedTime": 1632029243041,
+            "customerNumber": "10000060030127"
+        },
+        "card": {
+            "creationTime": 1632029244208,
+            "modifiedTime": 1632029762806,
+            "id": "450BD2C66427145770EA7A26AF2257D2-1000043511",
+            "cardNumber": "9072699345277493354",
+            "panFirst6": "557605",
+            "panLast4": "0213",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212009",
+            "customerNumber": "10000060030127",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1631779078793,
+            "modifiedTime": 1631779078793,
+            "customerNumber": "10000050050630"
+        },
+        "card": {
+            "creationTime": 1631779080008,
+            "modifiedTime": 1632284540594,
+            "id": "122A07C4E7DF86F85184C60D27DB4B0B-1000043511",
+            "cardNumber": "6378987786795435317",
+            "panFirst6": "557605",
+            "panLast4": "0197",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212009",
+            "customerNumber": "10000050050630",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    },
+    {
+        "customer": {
+            "creationTime": 1631686661965,
+            "modifiedTime": 1631686661965,
+            "customerNumber": "10000050030988"
+        },
+        "card": {
+            "creationTime": 1631686663462,
+            "modifiedTime": 1631778105090,
+            "id": "A0BF0D3B1FF5A2EDBC26AFFED2F4FF52-1000043511",
+            "cardNumber": "7366927216391240017",
+            "panFirst6": "557605",
+            "panLast4": "0189",
+            "type": "virtual",
+            "state": "activated",
+            "sequenceNumber": 1,
+            "cardProfileName": "karta_openloop_virtual_card",
+            "pinFailCount": 0,
+            "reissue": false,
+            "expiry": "212009",
+            "customerNumber": "10000050030988",
+            "embossedName": "ERNY DALIRE",
+            "programName": "karta_openloop_giftcard"
+        }
+    }
+]

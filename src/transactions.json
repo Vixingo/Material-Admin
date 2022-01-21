@@ -1,0 +1,33 @@
+{
+    "count": 1,
+    "startIndex": 0,
+    "endIndex": 1,
+    "lastPage": true,
+    "totalCount": 1,
+    "data": [
+        {
+            "creationTime": 1639702125403,
+            "modifiedTime": 1639702125403,
+            "id": "5965BFD667DCA5CC3474AFF76E6ADF24-1000042516",
+            "transactionSourceCode": 6,
+            "transactionTypeCode": 5,
+            "reversal": false,
+            "fee": false,
+            "tax": false,
+            "amount": 100,
+            "amountText": "100.00000",
+            "memo": "Load",
+            "currency": "AUD",
+            "counterPortfolioName": "karta_openloop",
+            "callerReference": "B53AAA833E02B13BAFA9960618B7F79D",
+            "parent": {
+                "id": "2B5D073C98F386126872A6998393FBD9-1000042516",
+                "authorizations": [],
+                "creationTime": 1639702125403,
+                "originalTransactionId": "2B5D073C98F386126872A6998393FBD9-1000042516",
+                "callerReference": "B53AAA833E02B13BAFA9960618B7F79D"
+            },
+            "mcc": "0000"
+        }
+    ]
+}

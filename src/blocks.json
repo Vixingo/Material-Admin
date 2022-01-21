@@ -1,0 +1,14 @@
+{
+    "customerBlocks": [
+        {
+            "creationTime": 1639702122387,
+            "modifiedTime": 1639702122387,
+            "id": "34A121CF8D162A11115EA0383D45414E-1000042513",
+            "reason": "activation",
+            "memo": "needs KYC verification",
+            "releaseTime": 0,
+            "activeTime": 1639702122396
+        }
+    ],
+    "cardBlocks": []
+}
